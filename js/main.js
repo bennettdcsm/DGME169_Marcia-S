@@ -127,9 +127,7 @@ function animate() {
     
     const delta = clock.getDelta(); // Get the time since the last frame
 
-
     //  Update the mixer with the time delta
-
     if (mixer) {
         mixer.update(delta); 
     }
@@ -151,3 +149,6 @@ if (heroContainer) {
     init();
 }
 
+
+
+   

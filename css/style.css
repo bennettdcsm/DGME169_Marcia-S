@@ -109,7 +109,7 @@ nav a {
 }
 
 .cta:hover {
-    background: #8311cf;
+    background: #593884;
     transform: translateY(-2px);
 }
 
@@ -337,6 +337,85 @@ footer {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* -------------------- CONTACT FORM SECTION -------------------- */
+
+.contact-section {
+    padding: 60px 20px;
+    color: white; 
+    text-align: center;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+    display: grid;
+    /* Sets up a 2-column grid on larger screens */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    text-align: left;
+}
+
+/* Force the message and button to span both columns */
+.contact-form .full-width,
+.contact-form .submit-btn {
+    grid-column: 1 / -1; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff5722; /* Accent color for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08); 
+    color: white; 
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff5722; 
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.submit-btn {
+    /* Ensures the CTA style is applied and the button is wide */
+    width: 100%; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
 
 /* -------------------- MEDIA QUERIES (Responsiveness) -------------------- */
 
@@ -374,9 +453,10 @@ footer {
     .logo-video {
         width: 40px; 
     }
-<<<<<<< Updated upstream
-
-   
-=======
->>>>>>> Stashed changes
+@media (max-width: 600px) {
+    .contact-form {
+        /* Collapse to a single column */
+        grid-template-columns: 1fr; 
+    }
+}
 }
