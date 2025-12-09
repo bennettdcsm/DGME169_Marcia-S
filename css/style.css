@@ -337,21 +337,6 @@ footer {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* -------------------- CONTACT FORM SECTION -------------------- */
-
-.contact-section {
-    padding: 60px 20px;
-    color: white; 
-    text-align: center;
-}
-
-.contact-intro {
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    font-size: 1.1em;
-    color: rgba(255, 255, 255, 0.8);
-}
-
 .contact-form-container {
     max-width: 600px;
     margin: 0 auto;
@@ -414,6 +399,16 @@ footer {
     text-decoration: none;
 }
 
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
 
 
