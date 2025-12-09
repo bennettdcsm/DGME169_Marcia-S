@@ -378,6 +378,7 @@ footer {
     font-size: 1em;
     box-sizing: border-box;
     transition: border-color 0.3s;
+     border-radius: 50px; 
 }
 
 .contact-form input:focus,
@@ -387,13 +388,27 @@ footer {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.submit-btn {
+.submit-cta {
     /* Ensures the CTA style is applied and the button is wide */
-    width: 100%; 
-    text-align: center;
-    margin-top: 10px;
+    background: #b32216;
+    padding: 12px 25px; 
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    
+    /* Accentuated Pill Shape */
+    border-radius: 50px; 
+    
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.cta:hover {
+    background: #593884;
+    transform: translateY(-2px);
+}
+
+   
 .contact-link{
     color: #ffffff;
     text-decoration: none;
@@ -408,6 +423,20 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Adjust based on your design */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 
