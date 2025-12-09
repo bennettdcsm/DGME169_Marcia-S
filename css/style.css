@@ -433,10 +433,12 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #fff; /* Adjust based on your design */
+    
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
+   
 }
 
 
@@ -457,13 +459,8 @@ input[type="checkbox"] {
         width: fit-content;
     }
 
-    .cta body-cta{
-        position: static; 
-        transform: none;
-        margin: 10px auto; 
-        display: block;
-        width: fit-content;
-    }
+  
+    
     
     header h1 {
         margin-top: 50px;
